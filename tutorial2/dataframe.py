@@ -1,5 +1,5 @@
 import pandas as pd
-df = pd.read_csv("/home/batm/Projects/pyPanda/tutorial2/weather_data.csv")
+df = pd.read_csv("resources/weather_data_tut2.csv")
 print(df.head())
 print(df.shape)
 
