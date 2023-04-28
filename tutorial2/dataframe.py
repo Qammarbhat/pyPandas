@@ -30,7 +30,7 @@ print("Maximum temprature is: ", df['temperature'].max())
 print("Mean temprature is: ", df['temperature'].mean())
 
 
-# describe (print statastics)
+# describe (print statastics of data)
 print(df.describe())
 
 # Conditional selection
