@@ -1,0 +1,41 @@
+Importing Libraries
+
+    pandas library is imported with alias pd.
+
+Creating Weather Dataframe for India
+
+    A pandas DataFrame india_weather is created to store the weather information of Indian cities, which includes columns like city, temperature, and humidity.
+
+Creating Weather Dataframe for USA
+
+    A pandas DataFrame us_weather is created to store the weather information of US cities, which includes columns like city, temperature, and humidity.
+
+Concatenating DataFrames as Rows
+
+    pd.concat() function is used to concatenate india_weather and us_weather dataframes vertically, so that they are combined as rows.
+
+Fixing the Index
+
+    pd.concat() function is used with argument ignore_index=True to reset the index of the concatenated dataframe.
+
+Keys Argument
+
+    pd.concat() function is used with argument keys=["india", "us"] to add a hierarchical index to the concatenated dataframe.
+
+Retrieving Data from Indian Cities
+
+    df.loc["india"] is used to get the weather information of Indian cities only.
+
+Concatenating DataFrames as Columns
+
+    Two dataframes temperature_df and windspeed_df are concatenated horizontally using pd.concat() function with axis=1 argument.
+
+Joining DataFrame with a Series
+
+    A pandas series series is created to represent the weather condition for each city. It is concatenated with temperature_df dataframe horizontally using pd.concat() function with axis=1 argument.
+
+Functions used in the code:
+
+    pd.DataFrame(): To create a dataframe
+    pd.concat(): To concatenate dataframes
+    pd.Series(): To create a series

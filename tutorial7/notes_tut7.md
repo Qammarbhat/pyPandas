@@ -1,4 +1,4 @@
-# Analyzing Weather Data by Cities
+# Group By, (Split and Combine)
 
 This code reads a weather data CSV file into a pandas DataFrame and then performs some basic analysis on the data, grouped by cities. The code also generates a plot to visualize the data.
 
