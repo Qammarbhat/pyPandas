@@ -13,7 +13,7 @@ We merge df1 and df2 into a new DataFrame, df3, using the merge() function. We s
 
 We create two more DataFrames, df4 and df5, that have different cities than df1 and df2. We then use the merge() function to merge these DataFrames. We specify the `how` argument to determine the type of merge we want to perform.
 
-1. `outer` : Performs a full outer join, which includes all rows from both DataFrames.
+`outer` : Performs a full outer join, which includes all rows from both DataFrames.
     
 `left` : Performs a left outer join, which includes all rows from the left DataFrame and any matching rows from the right DataFrame.
     
@@ -30,7 +30,11 @@ We create two more DataFrames, df7 and df8, that have different city names than 
 Here are the functions used in this code along with their brief definitions:
 
 `pd.DataFrame()`: Creates a new pandas DataFrame.
+
 `pd.merge()` : Merges two or more pandas DataFrames based on specified columns.
+
 `DataFrame.print()` : Prints the DataFrame to the console.
+
 `DataFrame.rename()` : Renames columns of a DataFrame.
+
 `DataFrame.drop()` : Drops specified labels from rows or columns of a DataFrame.
