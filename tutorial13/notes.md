@@ -1,4 +1,4 @@
-# Crosstb in Pnadas
+# Crosstab in Pnadas
 The `pd.crosstab()` function in Pandas is used to create cross-tabulations (frequency tables) of one or more variables in a dataframe. It counts the number of times each combination of values in the specified columns occurs and creates a new dataframe with the counts. The function takes one or more columns of the dataframe as arguments, and can also take the "margins" argument to add total counts to the crosstab. Additionally, it can take multiple columns as arguments to create a crosstab of more than two variables.
 
 The `pd.crosstab()` function in Pandas is a very powerful tool for creating frequency tables of one or more variables in a dataframe. It can be used to quickly and easily summarize the data and gain insights into patterns and relationships between variables.
@@ -39,21 +39,6 @@ print("========================================")
 new_df = pd.crosstab(df.Sex, [df.Handedness, df.Nationality], margins = True)
 print(new_df)
 ```
-
-# Using crosstable
-` new_df = pd.crosstab(df.Nationality, df.Handedness)`
-print(new_df)
-
-print("========================================")
-# The margin argument
-
-new_df = pd.crosstab(df.Sex, df.Handedness, margins = True)
-print(new_df)
-print("========================================")
-
-# Using more than two variable
-new_df = pd.crosstab(df.Sex, [df.Handedness, df.Nationality], margins = True)
-print(new_df)
 
 This code imports the Pandas library and reads an Excel file called "survey_tut13.xls" into a Pandas dataframe named "df". It then prints the dataframe to the console and separates the output from the next section with a line of equal signs.
 
