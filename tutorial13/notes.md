@@ -7,7 +7,7 @@ The function takes one or more columns of the dataframe as arguments and creates
 
 For example, if we have a dataframe of customer purchases with columns for "Product", "Gender", and "Age Group", we can create a crosstab of the number of purchases of each product by gender and age group by using the following code:
 
-`pd.crosstab(df.Product, [df.Gender, df.Age_Group])``
+`pd.crosstab(df.Product, [df.Gender, df.Age_Group])`
 
 This will create a crosstab that shows the number of purchases of each product by gender and age group, with each combination of values represented in a cell of the table.
 
@@ -39,15 +39,9 @@ print("========================================")
 new_df = pd.crosstab(df.Sex, [df.Handedness, df.Nationality], margins = True)
 print(new_df)
 ```
-python
-
-import pandas as pd
-df = pd.read_excel("resources/survey_tut13.xls")
-print(df)
-print("========================================")
 
 # Using crosstable
-new_df = pd.crosstab(df.Nationality, df.Handedness)
+` new_df = pd.crosstab(df.Nationality, df.Handedness)`
 print(new_df)
 
 print("========================================")
@@ -74,6 +68,7 @@ The code prints this new dataframe to the console and separates the output from 
 Finally, the code creates another crosstab of handedness, nationality, and sex, with the margins argument set to True. This creates a more complex crosstab with three variables. The resulting dataframe is printed to the console.
 
 Overall, this code demonstrates how to use the `pd.crosstab()` function in Pandas to create frequency tables for one or more variables in a dataframe. It also shows how to use the "margins" argument to add total counts to the crosstab.
+
 
 # Functions used in this code
 1. `pd.read_excel()`
